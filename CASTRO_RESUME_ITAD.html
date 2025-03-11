@@ -13,18 +13,20 @@
         }
 
         h1 {
-            font-family: Georgia;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             color: #EEF4ED;
             text-align: center;
             background-color: #0B2545;
+            text-decoration: underline;
+            text-shadow: 10px 10px 200px #EEF4ED;
         }
 
         h2 {
-            font-family: Georgia;
-            font-weight: bold;
-            color: Black;
+            font-family: 'Times New Roman', Times, serif;
+            color: #EEF4ED;
+            background-color: #0B2545;
             text-align: center;
-            padding: 5px 10px 0px 10px;
+            font-size: 30px;
         }
 
         ul {
@@ -41,12 +43,42 @@
             color:#EEF4ED;
         }
 
+        .nav-buttons {
+        display: inline-block;
+        background-color: #0B2545;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+        color: #EEF4ED;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        margin-top: 10px;
+        }
+
+        .nav-buttons:hover {
+        background-color: #007bff;
+        color: #fff;
+        }
+
+        .btn {
+  background-color: #0B2545;
+  color: #EEF4ED;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+
     </style>
 </head>
 <body>
 
     <div align="center">
-        <h1>Castro, Mc. Jayverson P.</h1>
+        <h1>Resume of Castro, Mc. Jayverson P.</h1>
         <hr size="5" width="100%" color="black" NOSHADE>
     </div>
 
@@ -97,7 +129,9 @@
     </div>
     <ul>
         <li>CodeChum Seminar</li>
-        <li>RND: Cyber Security Seminar</li>
+        <li>Research and Development Unit: Cyber Security Seminar</li>
+        <li>Beyond the Screen: Navigating IT Careers in the Workers</li>
+        <li>Portfolio Building 101</li>
     </ul>
 
     <div align="center">
@@ -110,9 +144,10 @@
     </ul>
 
     <div align="center">
-    <a href="#top">Go Top</a>
-            <br><br>
-            <a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html"><i class="fa-solid fa-house-user" style="font-size: 40px;color: whitesmoke;text-shadow:2px 2px 2px #0B2545; "></i></a>
+        <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+        </div>
+        <a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
     </div>
 
 </body>
