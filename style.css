@@ -1,4 +1,4 @@
-    body {
+body {
         color: #13315C;
         background-color: #8DA9C4;
         font-family: Tahoma, Geneva, Verdana, sans-serif;
@@ -75,14 +75,14 @@
     text-decoration: none;
   }
   
-  /* Center and design the navigation bar */
   .section-nav {
     display: flex;
     justify-content: center;
-    background-color: #EEF4ED;
-    padding: 20px;
+    background-color: #0B2545;
+    padding: 15px;
     border-radius: 10px;
-    margin: 10px auto;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .section-nav ul {
@@ -101,8 +101,8 @@
     text-decoration: none;
     color: #EEF4ED;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 3px;
+    padding: 10px 20px;
+    border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
   }
   
