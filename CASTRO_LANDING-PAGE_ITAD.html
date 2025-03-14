@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <style>
         body {
             font-family: Verdana, sans-serif;
-            background-color: #8DA9C4;
-            color: #13315C;
-            text-align: center;
+            background-color:#8DA9C4;
+            color: #EEF4ED;
             margin: 0;
             padding: 0;
         }
@@ -17,53 +17,105 @@
             max-width: 960px;
             margin: 25px auto;
             padding: 20px;
-            background-color: #EEF4ED;
             text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 350px;
+            height: 380px;
+            border: 2px ridge #0B2545;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
 
         h1 {
-            color: #0B2545;
+            color: #13315C;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
+            font-weight: bold;
         }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
-        a {
+        .nav-links a {
             display: inline-block;
             padding: 15px 20px;
-            margin: 15px;
             background-color: #0B2545;
             color: #EEF4ED;
             text-decoration: none;
             border-radius: 20px;
             font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
         }
 
-        a:hover {
-            background-color: #007bff;
+        .nav-links a:hover {
+            background-color: #0056b3;
             color: #EEF4ED;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .social-links a {
+            color: #EEF4ED;
+            font-size: 1.5em;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
+        }
+
+        .left-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .right-content {
+            flex: 1;
+            text-align: right;
+            margin-top: 100px;
         }
     </style>
 </head>
 <body>
+    <div class="background"></div>
     <div class="container">
-        <h1>Welcome to My Personal Website</h1>
-        <p>Select and click to view more details about me.</p><br>
-
-        <div> 
-            <a href="CASTRO_BIOGRAPHY_ITAD.html" title="Click here to view My Biography.">Bio</a>
-            <a href="CASTRO_SKILLS_ITAD.html" title="Click here to view My Skills.">Skills</a>
-            <a href="CASTRO_RESUME_ITAD.html" title="Click here to view My Resume.">Resume</a>
-            <a href="CASTRO_CONTACTS_ITAD.html" title="Click here to view My Contact Information.">Contact</a>
+        <div class="left-content">
+            <div class="header">
+                <h1>Mc. Jayverson Castro</h1>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/mcjayversonnn" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/sdzemzi_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/mcjayversonnn" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mc-jayverson-castro-675236356/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="nav-links"> 
+                <a href="CASTRO_BIOGRAPHY_ITAD.html" title="Click here to view My Biography.">Biography</a>
+                <a href="CASTRO_SKILLS_ITAD.html" title="Click here to view My Skills.">Skills</a>
+                <a href="CASTRO_RESUME_ITAD.html" title="Click here to view My Resume.">Resume</a>
+                <a href="CASTRO_CONTACTS_ITAD.html" title="Click here to view My Contact Information.">Contact</a>
+            </div>
+        </div>
+        <div class="right-content">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-image" title="Profile Picture">
         </div>
     </div>
 </body>
