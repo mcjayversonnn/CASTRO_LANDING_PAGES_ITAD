@@ -123,3 +123,31 @@ p {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
+.gallery {
+    display:flex;
+    justify-content: center;    
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 50px;
+}
+
+.gallery img {
+    display: flex;
+    width: 200px;
+    height: auto;
+    border: 2px ridge #0B2545;
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 0.50;
+}
+
+.gallery a {
+    display: contents;
+}
+
+img:hover{
+    opacity:1;
+    box-shadow:15px 15px 10px black;
+}
