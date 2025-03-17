@@ -6,21 +6,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <style>
         body {
-            font-family: Verdana, sans-serif;
-            background-color:#8DA9C4;
+            font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+            background-color: #8DA9C4;
             color: #EEF4ED;
             margin: 0;
             padding: 0;
         }
 
         .container {
-            max-width: 960px;
-            margin: 25px auto;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            text-align: center;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            height: 100vh;
         }
 
         .header {
@@ -36,12 +35,23 @@
             border: 2px ridge #0B2545;
             border-radius: 50%;
             margin-bottom: 20px;
+            object-fit: cover;
         }
 
         h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
             color: #13315C;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
+            text-align: center;
+        }
+
+        .introduction {
+            font-size: 1.2em;
+            color: #13315C;
+            margin-bottom: 40px;
+            margin-top: 30px;
         }
 
         .nav-links {
@@ -69,8 +79,7 @@
             display: flex;
             justify-content: center;
             gap: 50px;
-            margin-top: 20px;
-            margin-bottom: 40px;
+            margin-top: 30px;
         }
 
         .social-links a {
@@ -84,13 +93,15 @@
 
         .left-content {
             flex: 1;
-            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .right-content {
             flex: 1;
-            text-align: right;
-            margin-top: 100px;
+            color: #13315C;
+            padding: 20px;
         }
     </style>
 </head>
@@ -98,8 +109,16 @@
     <div class="background"></div>
     <div class="container">
         <div class="left-content">
-            <div class="header">
-                <h1>Mc. Jayverson Castro</h1>
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-image" title="Profile Picture">
+        </div>
+        <div class="right-content">
+            <h1>Yo, It's me Mc!</h1>
+            <p class="introduction">Hi, I’m Mc. Jayverson Castro, a 19-year-old student with a passion for web development. I’m currently enrolled in the Bachelor of Science in Information Technology program at the University of the East - Manila, where I’m building the skills and knowledge to turn my aspirations into reality.<br><br> Here's you can explore my skills, dive into my story, and get to know my professional background.</p>
+            <div class="nav-links"> 
+                <a href="CASTRO_BIOGRAPHY_ITAD.html" title="Click here to view My Biography.">Biography</a>
+                <a href="CASTRO_SKILLS_ITAD.html" title="Click here to view My Skills.">Skills</a>
+                <a href="CASTRO_RESUME_ITAD.html" title="Click here to view My Resume.">Resume</a>
+                <a href="CASTRO_CONTACTS_ITAD.html" title="Click here to view My Contact Information.">Contact</a>
             </div>
             <div class="social-links">
                 <a href="https://www.facebook.com/mcjayversonnn" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -107,15 +126,6 @@
                 <a href="https://github.com/mcjayversonnn" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/mc-jayverson-castro-675236356/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="nav-links"> 
-                <a href="CASTRO_BIOGRAPHY_ITAD.html" title="Click here to view My Biography.">Biography</a>
-                <a href="CASTRO_SKILLS_ITAD.html" title="Click here to view My Skills.">Skills</a>
-                <a href="CASTRO_RESUME_ITAD.html" title="Click here to view My Resume.">Resume</a>
-                <a href="CASTRO_CONTACTS_ITAD.html" title="Click here to view My Contact Information.">Contact</a>
-            </div>
-        </div>
-        <div class="right-content">
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-image" title="Profile Picture">
         </div>
     </div>
 </body>
