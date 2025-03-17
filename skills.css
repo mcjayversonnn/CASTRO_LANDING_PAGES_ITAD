@@ -59,7 +59,7 @@ a {
 .nav-buttons {
   display: inline-block;
   background-color: #0B2545;
-  padding: 10px;
+  padding: 8px;
   border-radius: 20px;
   text-align: center;
   color: #EEF4ED;
@@ -71,11 +71,9 @@ a {
 
 .nav-buttons:hover {
   background-color: #007bff;
-  color: #EEF4ED;
-  text-decoration: none;
+  color: #fff;
 }
 
-/* Center and design the navigation bar */
 .section-nav {
     display: flex;
     justify-content: center;
@@ -115,13 +113,19 @@ a {
 .btn {
   background-color: #0B2545;
   color: #EEF4ED;
-  padding: 10px;
+  padding: 8px;
   border-radius: 20px;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
-  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: #EEF4ED;
+  text-decoration: none;
 }
 
 p {
